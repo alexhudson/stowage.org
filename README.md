@@ -1,6 +1,6 @@
 # Stowage
 
-Stowage is a package manager-alike for software packaged in Docker images. Stowage makes it simple to run software locally, and also create and share it with others - it's great for distributing tools in development teams, and for simplifying CI/CD processes.
+[Stowage](https://github.com/alexhudson/stowage) is a package manager-alike for software packaged in Docker images. Stowage makes it simple to run software locally, and also create and share it with others - it's great for distributing tools in development teams, and for simplifying CI/CD processes.
 
 Using Stowage, you can "install" definitions of commands - it creates a simple wrapper which allows you to call the container as if it were a local binary:
 
