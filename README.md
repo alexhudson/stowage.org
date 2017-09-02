@@ -1,37 +1,30 @@
-## Welcome to GitHub Pages
+# Stowage
 
-You can use the [editor on GitHub](https://github.com/alexhudson/stowage.org/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Stowage is a package manager-alike for software packaged in Docker images. Stowage makes it simple to run software locally, and also create and share it with others - it's great for distributing tools in development teams, and for simplifying CI/CD processes.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Using Stowage, you can "install" definitions of commands - it creates a simple wrapper which allows you to call the container as if it were a local binary:
 
-### Markdown
+```
+$ stowage install hello-world
+$ hello-world 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Installation
 
-### Jekyll Themes
+Visit the [stowage releases](https://github.com/alexhudson/stowage/releases/latest) and download the latest binary for your operating system.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/alexhudson/stowage.org/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Alternatively, if you're on a Mac, you can `brew tap alexhudson/stowage && brew install stowage`
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Or, if you're on Linux, you can `sudo docker run ealexhudson/stowage get-started | sudo sh`
