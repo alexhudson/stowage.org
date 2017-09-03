@@ -1,7 +1,7 @@
 {
-	"Name": "",
+	"Name": "stowage-demo",
 	"URI": "",
-	"Description": "",
+	"Description": "A demo repository containing the example stowage specs",
 	"Listing": [
 		{
 			"Name": "docker-bash",
