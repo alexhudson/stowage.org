@@ -1,0 +1,16 @@
+{
+    "Name": "dockerfile-lint",
+    "Image": "projectatomic/dockerfile-lint",
+    "Command": "dockerfile_lint",
+    "Options": {
+        "Tty": true,
+        "Interactive": true,
+        "Privileged": true
+    },
+    "Mounts": [
+        {
+            "Cwd": true,
+            "Guest": "/root"
+        }
+    ]
+}

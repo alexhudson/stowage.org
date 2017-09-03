@@ -1,0 +1,10 @@
+{
+    "Name": "docker-bash",
+    "Image": "ubuntu",
+    "Command": "/bin/bash",
+    "Options": {
+        "Tty": true,
+        "Interactive": true,
+        "Privileged": false
+    }
+}

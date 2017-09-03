@@ -1,0 +1,10 @@
+{
+    "Name": "hello-world",
+    "Image": "hello-world",
+    "Command": "",
+    "Options": {
+        "Tty": true,
+        "Interactive": false,
+        "Privileged": false
+    }
+}

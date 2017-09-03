@@ -1,0 +1,16 @@
+{
+    "Name": "microsoft-dotnet",
+    "Image": "microsoft/dotnet:latest",
+    "Command": "dotnet",
+    "Options": {
+        "Tty": true,
+        "Interactive": true,
+        "Privileged": true
+    },
+    "Mounts": [
+        {
+            "Cwd": true,
+            "Guest": "/root"
+        }
+    ]
+}
