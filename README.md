@@ -21,7 +21,7 @@ To generate this message, Docker took the following steps:
     to your terminal.
 ```
 
-## Installation
+## Install Stowage
 
 Visit the [stowage releases](https://github.com/alexhudson/stowage/releases/latest) and download the latest binary for your operating system.
 
@@ -29,7 +29,7 @@ Alternatively, if you're on a Mac, you can `brew tap alexhudson/stowage && brew 
 
 Or, if you're on Linux, you can `sudo docker run ealexhudson/stowage get-started | sudo sh`
 
-## Using Stowage
+## Use Stowage
 
 * [Quick start introduction](Quick_start.md) for a speedy tour of stowage and why you might want to use it
 * [Existing Docker images](Existing_images.md) can be used with little or no adapation
