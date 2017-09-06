@@ -32,10 +32,10 @@ stowage creates a default specfile on installation. We can just pinch that as ou
 
 Copy this locally as `azure-cli.json`. Add `azure` as the `Command` in the file, and this will then solve our problem.
 
-As well as giving images to install, we can also use the specfiles themselves:
+As well as giving images to install, we can also use the specfiles themselves, either by providing a reference to a local file or giving stowage a URL that the specfile is available at:
 
 ```
-$ stowage install ./azure-cli.json
+$ stowage install-spec ./azure-cli.json
 azure-cli installed
 $ azure-cli help
 info:    Executing command help

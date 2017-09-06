@@ -2,7 +2,7 @@
 
 This is the primary use case that I'm interested in: being able to package up different types of tools in a Docker image has allowed me to create and quickly share tools with others. I think the specific benefits are:
 
-* ease of use. You can create a container, push it, and someone else can `stowage install` it - it's immediately available. 
+* ease of use. You can create a container, push it, and someone else can `stowage install` it - it's immediately available.
 * re-enforces "toolkit" pattern. New users of Docker often put a lot of build process in their Dockerfiles, bloating them in size. Use of toolkit type images like these improves best practice and results in smaller leaner images.
 * simple to share with CI. You hopefully have some integrated CI/CD system, like Jenkins or similar. These tools can be used there as well, and this ensures the development environment is close to the CI environment: you can be sure you have the same versions, for example.
 
@@ -12,7 +12,7 @@ Obviously, if you're an NPM user, it's pretty easy to do `npm install ...` and g
 
 The toolkit approach here is to create a container image that contains the tool, plus any dependencies needed. This can be used directly, and stowage gives you the ability to use this as a binary.
 
-In this example, I'm going to package up `webpack` in an image so that I can use it standalone. 
+In this example, I'm going to package up `webpack` in an image so that I can use it standalone.
 
 ### Building the tool
 
