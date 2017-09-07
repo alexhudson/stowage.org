@@ -18,7 +18,7 @@ The `stowage-demo` repository has been added. We can now search for commands tha
 
 ```
 $ stowage search lint
-stowage-demo\dockerfile-lint
+stowage-demo::dockerfile-lint
 ```
 
 ## Install a command
@@ -26,7 +26,7 @@ stowage-demo\dockerfile-lint
 Once a command is found, it can be installed. When installing from a repo you need to specify that as well - however, there are other arguments you can supply to install that we'll look at later.
 
 ```
-$ stowage install stowage-demo\dockerfile-lint
+$ stowage install stowage-demo::dockerfile-lint
 dockerfile-lint installed
 ```
 
