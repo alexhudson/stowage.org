@@ -35,13 +35,22 @@ dockerfile-lint installed
 Now that the command has been installed, I can use it on unsuspecting Dockerfiles. I'm going to lint the Dockerfile distributed with stowage:
 
 ```
-$ dockerfile-lint ./Dockerfile
+$ dockerfile-lint -f ./Dockerfile
 
 --------INFO---------
 
 INFO: There is no 'EXPOSE' instruction. Without exposed ports how will the service of the container be accessed?. 
 Reference -> https://docs.docker.com/reference/builder/#expose
 ```
+
+As an aside, if there is a Dockerfile in your local directory, you don't need to tell it which file to look at. But, if you don't pass any arguments and there is no Dockerfile, you get a slightly unhelpful error:
+
+```
+$ dockerfile-lint 
+ERROR: Dockerfile not found -> Dockerfile
+```
+
+This is from dockerfile-lint, not stowage!
 
 ## What's happening under the hood?
 
